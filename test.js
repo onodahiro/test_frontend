@@ -35,7 +35,8 @@ class Api
         let result = '';
         let strings = template.split('/');
 
-        strings.forEach((el, index) => {
+        strings.forEach((el, index) => 
+        {
             if (el.slice(0, 1) === '%' && el.slice(-1) === '%') {
                 let key = el.slice(1, -1);
                 let new_string = String(object[key]);
