@@ -32,7 +32,7 @@ class Api
 	 */
 	get_api_path(object, template)
 	{
-		let result = '';
+        let result = '';
         let strings = template.split('/');
 
         strings.forEach((el, index) => {
@@ -46,7 +46,7 @@ class Api
         })
 
         result = strings.join('/');
-		return result;
+        return result;
 	}
 }
 
